@@ -8,6 +8,8 @@ class IndexController extends Controller
 {
    
     public function index(){
-        return view('site.index');
+     $texto = "Aula de Laravel";
+     $complemento = "Meus Complemento";
+        return view('site.index', compact('texto','complemento'));
     }
 }
